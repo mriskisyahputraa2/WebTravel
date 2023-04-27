@@ -19,7 +19,7 @@ function Navbar() {
         <div className="flex justify-between items-center h-20 px-4">
             {/* Desktop Menu */}
             <div>
-                <h1 onClick={handleNav} className={Logo ? 'hidden' : 'block'}>INDONESIA</h1>
+                <h1 onClick={handleNav} className={Logo ? 'hidden' : 'block'}>INDONESIA.</h1>
             </div>
             <ul className='hidden md:flex'>
                 <li>Home</li>
@@ -43,7 +43,7 @@ function Navbar() {
             {/* Mobile Menu Dropdown */}
             <div onClick={handleNav} className={Nav ? 'flex flex-col absolute top-0 left-0 w-full bg-gray-100/90 px-4 py-7' : 'absolute left-[-100%]'}>
                 <ul>
-                    <h1>INDONESIA</h1>
+                    <h1>INDONESIA.</h1>
                     <li className='border-b'>Home</li>
                     <li className='border-b'>Destinations</li>
                     <li className='border-b'>Travel</li>

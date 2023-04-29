@@ -6,9 +6,9 @@ import KeyWest from '../assets/keywest.jpg'
 
 function Destinations() {
     return <>
-        <div className="max-w-[1240] mx-auto text-center py-16 px-4">
+        <div className="max-w-[1240px] mx-auto text-center py-16 px-4">
             <h1>All-Inclusive Resorts</h1>
-            <p className='py-4'>On the Lhok Mee Best Aceh.</p>
+            <p className='py-4'>The best places in Aceh.</p>
 
             {/* images */}
             <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>

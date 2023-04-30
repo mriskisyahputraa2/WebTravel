@@ -35,16 +35,15 @@ function Carousel() {
     }
 
     return <>
-        <div className="">
-            <div className="relative max-w-[1240px] py-16 px-4 max-auto  flex justify-center ">
-                <BsArrowLeftSquareFill onClick={leftSlide} className="absolute text-3xl top-[50%] left-8 cursor-pointer" /><br />
-                <BsArrowRightSquareFill onClick={rightSlide} className="absolute text-3xl top-[50%] right-8  cursor-pointer" />
-                {SlideImg.map((item, index) => (
-                    <div className={index === Slide ? 'opacity-100' : 'opacity-0'}>
-                        {index === Slide && (<img className="w-full rounded-md" src={item.url} alt="" />)}
-                    </div>
-                ))}
-            </div>
+        <div className="max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center items-center">
+            <BsArrowLeftSquareFill onClick={leftSlide} className="absolute text-3xl top-[50%] left-8 cursor-pointer" /><br />
+            <BsArrowRightSquareFill onClick={rightSlide} className="absolute text-3xl top-[50%] right-8  cursor-pointer" />
+
+            {SlideImg.map((item, index) => (
+                <div className={index === Slide ? 'opacity-100' : 'opacity-0'}>
+                    {index === Slide && (<img className="w-full rounded-md" src={item.url} alt="" />)}
+                </div>
+            ))}
         </div>
 
     </>
